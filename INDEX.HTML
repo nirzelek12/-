@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="https://p16-sign-sg.tiktokcdn.com/tos-alisg-avt-0068/717f280bed475230e0023ddf508c79d1~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=39912cc2&x-expires=1760698800&x-signature=887Ir%2BPwB7dsCJR7%2BVVaZQU%2FM4Q%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>×"×¨×›×' ×¨×™××œ ×ž×"×¨×™×": ×"×'×œ× ××§×•×¡</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Roboto', sans-serif; }
+
+body {
+    background-color: #0c0d1b;
+    color: #f0f0f0;
+    min-height: 100vh; 
+    display: flex; flex-direction: column; align-items: center; 
+    position: relative; overflow-x: hidden; 
+}
+
+.footer-copyright {
+    width: 100%;
+    background-color: #0c0d1b;
+    padding: 15px 0;
+    text-align: center;
+    color: #999;
+    font-size: 0.9em;
+    border-top: 1px solid #1e3a8a;
+    margin-top: auto; 
+    position: relative;
+    z-index: 10;
+}
+
+body::before {
+    content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at center 20%, rgba(30, 40, 100, 0.6), rgba(12, 13, 27, 1) 80%); 
+    z-index: -2; 
+}
+
+body::after {
+    content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png'); 
+    background-size: 30% auto; background-position: center 30%; background-repeat: no-repeat; 
+    opacity: 0.05; filter: grayscale(100%) brightness(50%); z-index: -1; 
+}
+
+.header {
+    text-align: center; padding: 20px 0; background: rgba(16, 16, 27, 0.95); width: 100%;
+    border-bottom: 4px solid #ffd700;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+    position: relative; z-index: 20;
+}
+
+.header .logo { width: 40px; margin-bottom: 10px; filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8)); }
+
+h1 { 
+    font-size: 2em; color: #fff; letter-spacing: 3px; font-weight: 900;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.8); 
+}
+
+.formation-control, .sidebar-widget, .bench-container-wrapper {
+    width: 95%; max-width: 2000px;
+    background: rgba(37, 38, 64, 0.9);
+    padding: 20px 30px; border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.9);
+    margin-top: 30px; margin-bottom: 30px;
+    border: 1px solid #4a4e69;
+    position: relative; z-index: 10;
+}
+
+.sidebar-widget {
+    width: 500px;
+    height: fit-content;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.formation-control button {
+    background: linear-gradient(145deg, #1e3a8a, #0c235a); 
+    color: #fff; border: none; border-radius: 8px;
+    padding: 10px 15px; font-weight: 700; cursor: pointer; transition: background 0.3s, transform 0.1s;
+}
+
+.formation-control button.active { 
+    background: #ffffff; 
+    color: #0c0d1b; 
+    box-shadow: 0 0 10px #ffd700;
+}
+
+#re-run-animation { 
+    background: linear-gradient(145deg, #ff6b6b, #e03b3b); 
+}
+
+#update-api-btn {
+    background: linear-gradient(145deg, #4fff3b, #308022);
+    color: #10101b;
+}
+
+.formation-control { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: center; }
+
+.main-content-wrapper {
+    display: flex; justify-content: center; width: 95%; max-width: 1650px; gap: 20px;
+    margin-bottom: 30px; position: relative; z-index: 10;
+}
+
+.pitch-container { flex-grow: 1; max-width: 2500px; }
+.pitch {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Soccer_field_-_empty.svg/1024px-Soccer_field_-_empty.svg.png'); 
+    background-size: cover; background-position: center; border-radius: 15px; 
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8); padding: 20px;
+    min-height: 800px; display: flex; flex-direction: column; justify-content: space-between;
+    border: 4px solid #ffd700;
+}
+
+.player-row-container {
+    display: flex; justify-content: space-around;
+    flex-direction: row-reverse;
+    padding: 10px 0;
+}
+
+.table-widget {
+    border: 1px solid #ffd700;
+}
+
+.table-widget .widget-header {
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); 
+    padding: 15px 20px;
+    border-bottom: 2px solid #ffd700;
+    text-align: center;
+    background: rgba(16, 16, 27, 0.9);
+    border-radius: 10px 20px 0 0;
+    font-size: 1.6em; font-weight: 900;
+}
+
+.scoreboard-widget {
+    border: 1px solid #58a6ff;
+}
+
+.scoreboard-widget .widget-header {
+    color: #58a6ff;
+    text-shadow: 0 0 10px rgba(88, 166, 255, 0.5); 
+    padding: 15px 20px;
+    border-bottom: 2px solid #58a6ff;
+    text-align: center;
+    background: rgba(16, 16, 27, 0.9);
+    border-radius: 12px 12px 0 0;
+    font-size: 1.6em; font-weight: 900;
+}
+
+.player-row-slot {
+    width: 200px; height: 120px; position: relative; 
+}
+
+.player-card, .player-list-item-content {
+    background-color: #1e3a8a;
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    padding: 5px; width: 90%; height: 100%;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    cursor: grab; transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    font-size: 0.9em; font-weight: 1000;
+    user-select: none;
+    -webkit-user-drag: none;
+    touch-action: none;
+}
+
+.player-list-item-content {
+    width: 100%; 
+    height: 60px;
+    padding: 5px 10px;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    gap: 10px;
+    font-size: 0.85em;
+}
+
+.player-card img, .player-list-item-content img { 
+    width: 50px; height: 50px; border-radius: 50%; 
+    border: 2px solid #fff;
+    object-fit: cover;
+}
+
+.player-list-item-content img {
+    width: 40px; 
+    height: 40px;
+}
+
+.player-card:hover, .player-list-item-content:hover {
+    box-shadow: 0 0 20px #ffd700, 0 4px 15px rgba(88,166,255,0.3);
+    transform: scale(1.04);
+    z-index: 2;
+}
+
+.player-list-item-content span {
+    flex-grow: 1; 
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.player-list-item-content.injured { 
+    background-color: #5a2c2c;
+    border-color: #ff3b3b;
+}
+
+.bench-container-wrapper { 
+    border: 1px solid #58a6ff;
+    display: flex;
+    gap: 20px;
+    padding: 20px 10px;
+}
+
+.injury-list-wrapper {
+    flex-basis: 100px;
+    flex-shrink: 0;
+    border-left: 2px solid #ff3b3b;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.injury-header {
+    border-bottom: 2px solid #ff3b3b; padding-bottom: 10px; display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 10px;
+}
+
+.injury-header h2 {
+    color: #ff3b3b; 
+    text-shadow: 0 0 10px rgba(255, 59, 59, 0.5);
+    font-size: 1.4em;
+}
+
+#injury-list-container {
+    list-style: none; padding: 10px 0; min-height: 100px;
+    display: flex; flex-direction: column; gap: 10px;
+}
+
+.bench-list-wrapper {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.bench-header {
+    border-bottom: 2px solid #58a6ff; padding-bottom: 10px; display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 10px;
+}
+
+.bench-list-wrapper h2 { 
+    color: #58a6ff; 
+    text-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
+    font-size: 1.4em;
+}
+
+#bench-list-container {
+    padding: 10px 0;
+    min-height: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-x: hidden; 
+}
+
+.bench-group-container {
+    flex-basis: 350px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-left: 15px;
+    border-left: 1px solid #4a4e69;
+}
+
+.bench-group-container:last-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+.bench-group-container h3 {
+    color: #ffd700; 
+    font-size: 1.2em; 
+    border-bottom: 2px solid #ffd700; 
+    padding-bottom: 5px; 
+    margin: 0 0 10px 0; 
+    display: block; 
+    white-space: normal;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
+}
+
+.bench-group-container .player-list { 
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+    max-height: 400px;
+    flex-wrap: wrap-reverse;
+    align-content: flex-start;
+    overflow-y: hidden;
+}
+
+.add-btn {
+    background: linear-gradient(145deg, #4fff3b, #308022); 
+    color: #10101b; border: none; border-radius: 50%;
+    width: 35px; height: 35px; font-size: 20px; line-height: 1;
+    cursor: pointer; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s; font-weight: 700;
+}
+
+.delete-btn {
+    background: linear-gradient(145deg, #ff3b3b, #c92f2f);
+    color: #fff; border: none; border-radius: 50%;
+    width: 25px; height: 25px; font-size: 14px;
+    position: absolute; top: 5px; right: 5px; z-index: 5;
+    cursor: pointer; transition: transform 0.2s;
+}
+
+.player-list-item-content .delete-btn {
+    position: static; 
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.player-row-slot.drag-over-active {
+    background-color: rgba(88, 166, 255, 0.2);
+    border: 3px dashed #ffd700 !important;
+}
+
+.player-row-slot.drag-over-invalid {
+    background-color: rgba(255, 59, 59, 0.2) !important;
+    border: 3px dashed #ff3b3b !important;
+}
+
+.dragging { opacity: 0.5; transform: scale(0.9); } 
+
+.player-row-slot.empty-slot { 
+    background-color: rgba(18, 19, 40, 0.6); 
+    border: 1px dashed #4a4e69; 
+    display: flex; justify-content: center; align-items: center;
+}
+
+.modal-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99; display: none;
+}
+
+#add-player-form {
+    background: #1a1a2e;
+    border: 4px solid #ffd700;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 40px rgba(255, 215, 0, 0.5);
+    z-index: 100;
+    position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 400px;
+}
+
+#add-player-form.visible { display: block; }
+
+#new-player-form label { display: block; margin-top: 15px; margin-bottom: 5px; font-weight: 700; color: #ffd700; }
+#new-player-form input, #new-player-form select {
+    width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #4a4e69;
+    background-color: #0c0d1b;
+    color: #f0f0f0;
+}
+
+#add-player-form .button-group { margin-top: 25px; display: flex; justify-content: space-between; }
+#add-player-form button { padding: 10px 20px; border-radius: 8px; font-weight: 900; cursor: pointer; transition: transform 0.2s; width: 48%; }
+#add-player-form button.submit { 
+    background: linear-gradient(145deg, #58a6ff, #0c235a);
+    color: #fff; 
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
+}
+#add-player-form button.cancel { 
+    background: linear-gradient(145deg, #ff3b3b, #c92f2f);
+    color: #fff; 
+    box-shadow: 0 0 10px rgba(255, 59, 59, 0.5);
+}
+
+@keyframes slideInFromBottom { 0% { opacity: 0; transform: translateY(100%); } 100% { opacity: 1; transform: translateY(0); } }
+.player-card.animate-in { animation: slideInFromBottom 0.5s ease-out forwards; }
+.animated-hide { visibility: hidden; }
+
+.api-status {
+    padding: 10px 20px;
+    background: rgba(88, 166, 255, 0.2);
+    border: 1px solid #58a6ff;
+    border-radius: 8px;
+    color: #58a6ff;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+.api-status.success { background: rgba(79, 255, 59, 0.2); border-color: #4fff3b; color: #4fff3b; }
+.api-status.error { background: rgba(255, 59, 59, 0.2); border-color: #ff3b3b; color: #ff3b3b; }
+
+@media (max-width: 1200px) {
+    body { display: flex; flex-direction: column; align-items: center; min-height: auto; }
+    .header { order: 1; margin: 0; }
+    .formation-control { order: 2; margin: 20px 0; } 
+    .bench-container-wrapper { order: 3; margin: 20px 0; } 
+    .main-content-wrapper { order: 4; margin-top: 20px; margin-bottom: 20px; }
+    .main-content-wrapper { flex-direction: column; align-items: center; }
+    .pitch-container { order: 1; }
+    .scoreboard-widget { order: 2; z-index: 1; position: relative; }
+    .table-widget { order: 3; }
+    .sidebar-widget { width: 95%; max-width: 1000px; margin-bottom: 20px; padding: 0; }
+    .pitch-container { max-width: 95%; }
+    .pitch { min-height: 500px; padding: 10px; }
+    .player-row-slot { width: 120px; height: 100px; }
+    h1 { font-size: 2.5em; }
+    .bench-container-wrapper { flex-direction: column; }
+    .injury-list-wrapper { flex-basis: auto; border-left: none; padding-left: 0; padding-right: 0; }
+}
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png" alt="סמל ריאל מדריד" class="logo">
+    <h1>הרכב ריאל מדריד: הגלנאקוס</h1>
+</div>
+
+<div class="formation-control" id="formation-control-buttons">
+    <label>בחר מערך:</label>
+    <button data-formation="4-3-3" class="active">4-3-3</button>
+    <button data-formation="4-4-2">4-4-2</button>
+    <button data-formation="4-2-3-1">4-2-3-1</button>
+    <button data-formation="3-5-2">3-5-2</button>
+    <button data-formation="4-1-2-1-2">4-1-2-1-2</button>
+    <button data-formation="3-4-3">3-4-3</button>
+    <button id="re-run-animation">הצג הרכב (אנימציה)</button>
+    <button id="update-api-btn">עדכן מ-API 🔄</button>
+</div>
+
+<div id="api-status-container"></div>
+
+<div class="bench-container-wrapper">
+    <div class="injury-list-wrapper" id="injury-list-wrapper">
+        <div class="injury-header">
+            <h2>פצועים / מושעים</h2>
+            <button class="add-btn" id="add-injured-btn">+</button>
+        </div>
+        <ul id="injury-list-container"></ul>
+    </div>
+
+    <div class="bench-list-wrapper">
+        <div class="bench-header">
+            <h2>ספסל ושחקנים זמיניים</h2>
+            <button class="add-btn" id="add-bench-btn">+</button>
+        </div>
+        <div id="bench-list-container"></div>
+    </div>
+</div>
+
+<div class="main-content-wrapper">
+    <div class="sidebar-widget table-widget" id="table-sidebar">
+        <div class="widget-header">טבלת הקבוצה (ריאל מדריד)</div>
+        <div data-widget-type="entityStandings" data-entity-type="team" data-entity-id="131" data-lang="he-il" data-widget-id="629e3a6d-273c-4f84-9ba2-b70ab7d012e9" data-limit-height-display="780" data-use-scrolling-buttons="true" data-theme="dark"></div>
+    </div>
+
+    <div class="pitch-container">
+        <div class="pitch" id="pitch-area">
+            <div class="player-row-container" id="row-1"></div> 
+            <div class="player-row-container" id="row-2"></div> 
+            <div class="player-row-container" id="row-3"></div> 
+            <div class="player-row-container" id="row-4"></div> 
+            <div class="player-row-container" id="row-5"></div>
+            <div class="player-row-container" id="row-6"></div>
+        </div>
+    </div>
+    
+    <div class="sidebar-widget scoreboard-widget" id="scoreboard-container">
+        <div class="widget-header">לוח תוצאות ומשחקים</div>
+        <div data-widget-type="entityScores" data-entity-type="team" data-entity-id="131" data-lang="he-il" data-widget-id="406f2d5e-569a-4021-bac9-e9dc00c4a883" data-limit-height-display="780" data-theme="dark"></div>
+    </div>
+</div>
+
+<script src="https://widgets.365scores.com/main.js" defer></script>
+
+<div class="modal-overlay" id="modal-overlay">
+    <div id="add-player-form">
+        <h3>הוספת שחקן חדש</h3>
+        <form id="new-player-form">
+            <label for="playerName">שם מלא:</label>
+            <input type="text" id="playerName" required>
+
+            <label for="playerPos">תפקיד:</label>
+            <select id="playerPos" required>
+                <option value="GK">שוער (GK)</option>
+                <option value="DEF">הגנה (DEF)</option>
+                <option value="MID">קישור (MID)</option>
+                <option value="FWD">התקפה (FWD)</option>
+                <option value="MID DEF">קשר/מגן (MID/DEF)</option>
+            </select>
+
+            <label for="playerImg">קישור לתמונה (URL):</label>
+            <input type="url" id="playerImg" value="images/players/new_player.jpg">
+            
+            <input type="hidden" id="targetStatus" value="bench">
+            <input type="hidden" id="targetRow" value="0">
+            <input type="hidden" id="targetSlot" value="-1">
+
+            <div class="button-group">
+                <button type="button" class="cancel" id="cancel-add-player-btn">ביטול</button>
+                <button type="submit" class="submit">הוסף שחקן לקבוצה</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer class="footer-copyright">
+    <p>&copy; 2025 כל הזכויות שמורות לאביריונו ניר.</p>
+</footer>
+
+<script>
+const RAPIDAPI_KEY = 'https://api-football-v1.p.rapidapi.com/v3/injuries?season=2025&team=541'; // ← הוסף את ה-API Key שלך כאן!
+
+// --- GLOBAL DATA & MAPPING ---
+const ROW_TO_POSITION = { 1: "GK", 2: "DEF", 3: "MID", 4: "MID", 5: "FWD MID", 6: "FWD" };
+const FORMATIONS = {
+    "4-3-3": { 1: 1, 2: 4, 3: 3, 6: 3 }, 
+    "4-4-2": { 1: 1, 2: 4, 3: 4, 6: 2 }, 
+    "4-2-3-1": { 1: 1, 2: 4, 3: 2, 4: 3, 6: 1 }, 
+    "3-5-2": { 1: 1, 2: 3, 3: 5, 6: 2 },
+    "4-1-2-1-2": { 1: 1, 2: 4, 3: 1, 4: 2, 5: 1, 6: 2},
+    "3-4-3": { 1: 1, 2: 3, 3: 4, 6: 3 },
+};
+
+const POSITION_GROUPS = {
+    "GK": { name: "שוערים (GK)", groupKey: "GK", order: 1 },
+    "DEF": { name: "מגנים (DEF)", groupKey: "DEF", order: 2 },
+    "MID": { name: "קישוריים (CM)", groupKey: "CM", order: 3 }, 
+    "FWD MID": { name: "קישוריים (CM)", groupKey: "CM", order: 3 },
+    "MID DEF": { name: "קישוריים (CM)", groupKey: "CM", order: 3 },
+    "FWD": { name: "חלוצים (FWD)", groupKey: "FWD", order: 4 },
+    "Other": { name: "אחרים", groupKey: "Other", order: 5 }
+};
+
+let currentFormation = FORMATIONS["4-3-3"];
+let nextPlayerId = 30;
+let draggingElementId = null;
+let currentTouchCard = null;
+let touchDragClone = null;
+let isAnimationRunning = false;
+let lastApiUpdate = 0;
+const UPDATE_INTERVAL = 12 * 60 * 60 * 1000; // 12 hours
+
+function getPlaceholderImage(position) {
+    switch (position) {
+        case 'GK': return 'https://placehold.co/50x50/FFD700/000000?text=GK';
+        case 'DEF': 
+        case 'MID DEF':
+            return 'https://placehold.co/50x50/1e3a8a/FFFFFF?text=DEF';
+        case 'MID': return 'https://placehold.co/50x50/58a6ff/000000?text=MID';
+        case 'FWD MID': return 'https://placehold.co/50x50/58a6ff/000000?text=AM'; 
+        case 'FWD': return 'https://placehold.co/50x50/DDDDDD/FFFFFF?text=FWD';
+        default: return 'https://placehold.co/50x50/CCCCCC/000000?text=P';
+    }
+}
+
+const BASE_PLAYERS = [
+    { id: 1, name: "Thibaut Courtois", img: "images/players/courtois.jpg", position: "GK", row: 1, slotIndex: 0, status: 'starter' },
+    { id: 2, name: "Carvajal", img: "images/players/carvajal.jpg", position: "DEF", row: 2, slotIndex: 3, status: 'starter' }, 
+    { id: 3, name: "Militao", img: "images/players/militao.jpg", position: "DEF", row: 2, slotIndex: 2, status: 'starter' },
+    { id: 4, name: "Hujisen", img: "images/players/hujisen.jpg", position: "DEF", row: 2, slotIndex: 1, status: 'starter' },
+    { id: 5, name: "Alvaro Carreras", img: "images/players/alvaro_carreras.jpg", position: "DEF", row: 2, slotIndex: 0, status: 'starter' },
+    { id: 6, name: "Tchouaméni", img: "images/players/TchouamÃ©ni.jpg", position: "MID", row: 3, slotIndex: 2, status: 'starter' },
+    { id: 7, name: "Bellingham", img: "images/players/bellingham.jpg", position: "FWD MID", row: 3, slotIndex: 1, status: 'starter' },
+    { id: 8, name: "Valverde", img: "images/players/valverde.jpg", position: "MID DEF", row: 3, slotIndex: 0, status: 'starter' }, 
+    { id: 9, name: "Vini", img: "images/players/vini.jpg", position: "FWD", row: 6, slotIndex: 2, status: 'starter' }, 
+    { id: 10, name: "Mbappe", img: "images/players/mbappe.jpeg", position: "FWD", row: 6, slotIndex: 1, status: 'starter' },
+    { id: 11, name: "Mastantuono", img: "images/players/mastantuono.jpg", position: "FWD MID", row: 6, slotIndex: 0, status: 'starter' },
+    
+    { id: 12, name: "Lunin", img: "images/players/lunin.jpg", position: "GK", row: 0, slotIndex: -1, status: 'bench' },
+    { id: 13, name: "Asencio", img: "images/players/asencio.jpg", position: "DEF", row: 0, slotIndex: -1, status: 'bench' },
+    { id: 14, name: "Alaba", img: "images/players/alaba.jpg", position: "DEF", row: 0, slotIndex: -1, status: 'bench' },
+    { id: 15, name: "Fran García", img: "images/players/fran.jpg", position: "DEF", row: 0, slotIndex: -1, status: 'bench' },
+    { id: 18, name: "Ceballos", img: "images/players/ceballos.jpg", position: "MID", row: 0, slotIndex: -1, status: 'bench' },
+    { id: 19, name: "Arda Guler", img: "images/players/arda guler.jpg", position: "FWD MID", row: 0, slotIndex: -1, status: 'bench' },
+    { id: 20, name: "Camavinga", img: "images/players/camavinga.jpg", position: "MID", row: 0, slotIndex: -1, status: 'bench' },
+    { id: 21, name: "Endrick", img: "images/players/endrick.jpg", position: "FWD", row: 0, slotIndex: -1, status: 'bench' },
+    { id: 22, name: "Gonzalo", img: "images/players/gonzalo.png", position: "FWD", row: 0, slotIndex: -1, status: 'bench' },
+    { id: 23, name: "Brahim", img: "images/players/brahim.jpg", position: "FWD MID", row: 0, slotIndex: -1, status: 'bench' },
+    { id: 24, name: "Mendy", img: "images/players/mendy.jpg", position: "MID", row: 0, slotIndex: -1, status: 'injured' },
+    { id: 16, name: "Rudiger", img: "images/players/rudiger.jpg", position: "DEF", row: 0, slotIndex: -1, status: 'injured' },
+    { id: 17, name: "Trent", img: "images/players/trent.jpg", position: "MID DEF", row: 0, slotIndex: -1, status: 'injured' },
+    { id: 25, name: "Rodrygo", img: "images/players/rodrygo.jpg", position: "FWD", row: 0, slotIndex: -1, status: 'bench' }
+];
+
+let allPlayers = [...BASE_PLAYERS];
+
+const pitchDivs = { 
+    1: document.getElementById('row-1'), 
+    2: document.getElementById('row-2'), 
+    3: document.getElementById('row-3'), 
+    4: document.getElementById('row-4'),
+    5: document.getElementById('row-5'),
+    6: document.getElementById('row-6')
+};
+
+const injuryListContainer = document.getElementById('injury-list-container');
+const addPlayerForm = document.getElementById('add-player-form');
+const modalOverlay = document.getElementById('modal-overlay');
+const newPlayerForm = document.getElementById('new-player-form');
+const apiStatusContainer = document.getElementById('api-status-container');
+
+let targetPlacement = { status: 'bench', row: 0, slotIndex: -1 };
+
+function showApiStatus(message, type = 'info') {
+    const status = document.createElement('div');
+    status.className = `api-status ${type}`;
+    status.textContent = message;
+    apiStatusContainer.innerHTML = '';
+    apiStatusContainer.appendChild(status);
+    setTimeout(() => status.remove(), 5000);
+}
+
+/**
+ * עדכן שחקנים פצועים מ-API
+ */
+async function fetchAndUpdateInjuries() {
+    if (!RAPIDAPI_KEY || RAPIDAPI_KEY === 'https://api-football-v1.p.rapidapi.com/v3/injuries?season=2025&team=541') {
+        showApiStatus('⚠️ API Key לא מוגדר. הוסף RAPIDAPI_KEY בקוד!', 'error');
+        return;
+    }
+
+    try {
+        showApiStatus('⏳ משלוח בקשה לשרת...', 'info');
+
+        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/injuries?season=2025&team=541', {
+            method: 'GET',
+            headers: {
+                'x-rapidapi-key': RAPIDAPI_KEY,
+                'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        const injuries = data.response || [];
+
+        console.log('נתוני פציעות מ-API:', injuries);
+
+        // איפוס כל שחקנים מסטטוס "פצוע"
+        allPlayers.forEach(p => {
+            if (p.status === 'injured' && !p.name.includes('(API)')) {
+                p.status = 'bench';
+                p.row = 0;
+                p.slotIndex = -1;
+            }
+        });
+
+        // עדכן שחקנים פצועים מה-API
+        injuries.forEach(injury => {
+            const playerName = injury.player.name;
+            const player = allPlayers.find(p => 
+                p.name.toLowerCase() === playerName.toLowerCase()
+            );
+
+            if (player) {
+                console.log(`✓ ${player.name} סומן כפצוע`);
+                if (player.status === 'starter') {
+                    const prevRow = player.row;
+                    player.status = 'injured';
+                    player.row = 0;
+                    player.slotIndex = -1;
+                    reIndexRow(prevRow);
+                } else {
+                    player.status = 'injured';
+                }
+            }
+        });
+
+        fillEmptySlots();
+        renderLineup(false);
+        showApiStatus(`✅ עדכון הושלם! ${injuries.length} שחקנים פצועים`, 'success');
+        lastApiUpdate = Date.now();
+
+    } catch (error) {
+        console.error('שגיאה בעדכון API:', error);
+        showApiStatus(`❌ שגיאה: ${error.message}`, 'error');
+    }
+}
+
+function getValidPositions(rowNum) {
+    if (rowNum === 1) return ['GK'];
+    if (rowNum === 2) return ['DEF'];
+    if (rowNum === 4) return ['MID', 'FWD MID', 'FWD'];
+    if (rowNum === 3 || rowNum === 5) return ['MID', 'FWD MID']; 
+    if (rowNum === 6) return ['FWD', 'FWD MID']; 
+    return [];
+}
+
+function showAddPlayerForm(status = 'bench', row = 0, slot = -1) {
+    targetPlacement = { status: status, row: parseInt(row), slotIndex: parseInt(slot) };
+    document.getElementById('new-player-form').reset(); 
+    
+    const posSelect = document.getElementById('playerPos');
+    posSelect.disabled = false;
+    document.getElementById('playerImg').value = "images/players/new_player.jpg";
+
+    if (row > 0) {
+        const requiredPos = ROW_TO_POSITION[row];
+        posSelect.value = requiredPos.split(' ')[0]; 
+        posSelect.disabled = true; 
+    }
+    
+    addPlayerForm.classList.add('visible');
+    modalOverlay.style.display = 'block';
+    setTimeout(() => { document.getElementById('playerName').focus(); }, 100);
+}
+
+function hideAddPlayerForm() {
+    addPlayerForm.classList.remove('visible');
+    modalOverlay.style.display = 'none';
+}
+
+function addPlayerImmediately(event) {
+    event.preventDefault(); 
+
+    const name = document.getElementById('playerName').value.trim();
+    const position = document.getElementById('playerPos').value;
+    let imgUrl = document.getElementById('playerImg').value.trim();
+    
+    if (!imgUrl || imgUrl === "images/players/new_player.jpg") {
+        imgUrl = getPlaceholderImage(position); 
+    }
+    
+    if (!name || !position) {
+        alert("נא למלא שם ותפקיד.");
+        return;
+    }
+
+    const existingPlayer = allPlayers.find(p => p.name.toLowerCase() === name.toLowerCase());
+    if (existingPlayer) {
+        alert(`שחקן זה כבר נמצא בקבוצה: "${name}"`);
+        return;
+    }
+    
+    nextPlayerId++; 
+
+    const newPlayer = {
+        id: nextPlayerId, 
+        name: name,
+        img: imgUrl,
+        position: position,
+        row: targetPlacement.row, 
+        slotIndex: targetPlacement.slotIndex, 
+        status: targetPlacement.status 
+    };
+
+    allPlayers.push(newPlayer); 
+    hideAddPlayerForm(); 
+    renderLineup(false); 
+    document.getElementById('new-player-form').reset();
+}
+
+function demotePlayerToBench(playerId) {
+    const playerIndex = allPlayers.findIndex(p => p.id == playerId);
+    if (playerIndex === -1) return;
+
+    const player = allPlayers[playerIndex];
+    
+    if (player.status === 'bench' || player.status === 'injured') {
+        if (confirm(`בטוח שברצונך להסיר את ${player.name} מהרשימה לחלוטין?`)) {
+            const previousRow = player.row;
+            allPlayers.splice(playerIndex, 1);
+            if (previousRow > 0) {
+                reIndexRow(previousRow); 
+            }
+        } else {
+            return;
+        }
+    } else {
+        const previousRow = player.row;
+        player.status = 'bench';
+        player.row = 0;
+        player.slotIndex = -1;
+        
+        if (previousRow > 0) {
+            reIndexRow(previousRow); 
+        }
+    }
+    
+    renderLineup(false);
+}
+
+function reIndexRow(rowNum) {
+    if (rowNum === 0 || !pitchDivs[rowNum]) return; 
+
+    const startersInRow = allPlayers
+        .filter(p => p.status === 'starter' && p.row === rowNum)
+        .sort((a, b) => a.slotIndex - b.slotIndex); 
+
+    startersInRow.forEach((player, index) => {
+        const playerIndex = allPlayers.indexOf(player);
+        allPlayers[playerIndex].slotIndex = index; 
+    });
+}
+
+function fillEmptySlots() {
+    const availablePlayers = allPlayers
+        .filter(p => p.status !== 'starter')
+        .sort((a, b) => {
+            const statusA = a.status === 'injured' ? 1 : 0;
+            const statusB = b.status === 'injured' ? 1 : 0;
+            return statusA - statusB;
+        });
+
+    const currentFormationRowKeys = Object.keys(currentFormation).map(Number).sort((a, b) => a - b);
+    
+    for (const rowNum of currentFormationRowKeys) {
+        const maxSlots = currentFormation[rowNum];
+        const validPositions = getValidPositions(rowNum);
+
+        if (maxSlots === undefined) continue;
+
+        for (let slot = 0; slot < maxSlots; slot++) {
+            const isSlotEmpty = !allPlayers.some(p => p.row === rowNum && p.slotIndex === slot && p.status === 'starter');
+
+            if (isSlotEmpty) {
+                const playerToPromoteIndex = availablePlayers.findIndex(p => {
+                    const playerPositions = p.position.split(' ');
+                    return playerPositions.some(pPos => validPositions.includes(pPos));
+                });
+
+                if (playerToPromoteIndex !== -1) {
+                    const playerToPromote = availablePlayers[playerToPromoteIndex];
+                    const originalPlayerIndex = allPlayers.findIndex(p => p.id === playerToPromote.id);
+
+                    allPlayers[originalPlayerIndex].status = 'starter';
+                    allPlayers[originalPlayerIndex].row = rowNum;
+                    allPlayers[originalPlayerIndex].slotIndex = slot;
+
+                    availablePlayers.splice(playerToPromoteIndex, 1);
+                }
+            }
+        }
+    }
+}
+
+function changeFormation(formationKey, isAnimated = false) {
+    const newFormation = FORMATIONS[formationKey];
+    if (!newFormation) return;
+
+    currentFormation = newFormation;
+    setActiveButton(formationKey);
+    
+    const newFormationRowKeys = Object.keys(newFormation).map(Number);
+    const rowsToReIndex = []; 
+
+    allPlayers.filter(p => p.status === 'starter').forEach(player => {
+        const rowNum = player.row;
+        const maxSlots = newFormation[rowNum]; 
+        
+        if (!newFormationRowKeys.includes(rowNum) || (maxSlots !== undefined && player.slotIndex >= maxSlots)) {
+            player.status = 'bench';
+            player.row = 0;
+            player.slotIndex = -1;
+            
+            if (rowNum > 0 && !rowsToReIndex.includes(rowNum)) { 
+                rowsToReIndex.push(rowNum);
+            }
+        }
+    });
+    
+    rowsToReIndex.forEach(reIndexRow);
+    fillEmptySlots();
+    newFormationRowKeys.forEach(reIndexRow);
+    
+    if(isAnimated) {
+        const benchContainerContent = document.getElementById('bench-list-container');
+        Object.values(pitchDivs).forEach(div => div.innerHTML = '');
+        if (benchContainerContent) benchContainerContent.innerHTML = '';
+        injuryListContainer.innerHTML = '';
+        renderLineup(true); 
+    } else {
+        renderLineup(false);
+    }
+}
+
+function setActiveButton(formationKey) {
+    document.querySelectorAll('.formation-control button[data-formation]').forEach(button => {
+        button.classList.remove('active');
+        if (button.dataset.formation === formationKey) {
+            button.classList.add('active');
+        }
+    });
+}
+
+function handleDragStart(e) {
+    const targetCard = e.target.closest('.player-card, .player-list-item-content');
+    if (!targetCard) return;
+
+    if (isAnimationRunning) { e.preventDefault(); return; } 
+    
+    draggingElementId = targetCard.dataset.id;
+    e.dataTransfer.setData('text/plain', draggingElementId);
+    targetCard.classList.add('dragging'); 
+    e.dataTransfer.effectAllowed = 'move';
+}
+
+function handleDragEnd(e) {
+    const targetCard = e.target.closest('.player-card, .player-list-item-content');
+    if(targetCard) targetCard.classList.remove('dragging');
+    draggingElementId = null;
+    
+    document.querySelectorAll('.drag-over-active, .drag-over-invalid').forEach(el => {
+        el.classList.remove('drag-over-active');
+        el.classList.remove('drag-over-invalid');
+    });
+}
+
+function handleDragOver(e) {
+    const targetElement = e.target.closest('.player-row-slot, #bench-list-container, #injury-list-container');
+    if (!targetElement) return;
+
+    e.preventDefault(); 
+    if (isAnimationRunning) { e.dataTransfer.dropEffect = 'none'; return; }
+    
+    e.dataTransfer.dropEffect = 'move';
+    
+    const sourcePlayer = allPlayers.find(p => p.id == draggingElementId);
+
+    if (!sourcePlayer) return;
+
+    let isValid = true;
+
+    if (targetElement.classList.contains('player-row-slot')) {
+        const targetRow = parseInt(targetElement.dataset.row);
+        const validPositions = getValidPositions(targetRow);
+        const playerPositions = sourcePlayer.position.split(' ');
+        const isPositionMatch = playerPositions.some(pPos => validPositions.includes(pPos));
+
+        if (!isPositionMatch) isValid = false;
+        if (currentFormation[targetRow] === undefined) isValid = false;
+    }
+
+    if (isValid) {
+        targetElement.classList.remove('drag-over-invalid');
+        targetElement.classList.add('drag-over-active');
+    } else {
+        targetElement.classList.add('drag-over-invalid');
+        targetElement.classList.remove('drag-over-active');
+        e.dataTransfer.dropEffect = 'none';
+    }
+}
+
+function handleDragEnter(e) {
+    const targetElement = e.target.closest('.player-row-slot, #bench-list-container, #injury-list-container');
+    if (!targetElement) return;
+    e.preventDefault();
+    if (isAnimationRunning) return;
+}
+
+function handleDragLeave(e) {
+    const targetElement = e.target.closest('.player-row-slot, #bench-list-container, #injury-list-container');
+    
+    if (targetElement && !targetElement.contains(e.relatedTarget)) {
+        targetElement.classList.remove('drag-over-active');
+        targetElement.classList.remove('drag-over-invalid');
+    }
+}
+
+function handleDrop(e) {
+    e.preventDefault();
+    if (isAnimationRunning || !draggingElementId) return;
+    
+    const targetElement = e.target.closest('.player-row-slot, #bench-list-container, #injury-list-container');
+    if (!targetElement) return;
+    
+    if (targetElement.classList.contains('drag-over-invalid')) {
+        targetElement.classList.remove('drag-over-invalid');
+        targetElement.classList.remove('drag-over-active');
+        draggingElementId = null; 
+        return; 
+    }
+
+    targetElement.classList.remove('drag-over-active');
+    targetElement.classList.remove('drag-over-invalid');
+
+    const sourcePlayer = allPlayers.find(p => p.id == draggingElementId);
+    
+    processDropLogic(sourcePlayer, targetElement);
+    fillEmptySlots(); 
+    renderLineup(false); 
+}
+
+function processDropLogic(sourcePlayer, targetElement) {
+    if (!sourcePlayer || !targetElement) return;
+
+    const sourceIndex = allPlayers.indexOf(sourcePlayer);
+    const sourcePrevRow = sourcePlayer.row; 
+    const benchContainer = document.getElementById('bench-list-container');
+
+    if (targetElement.id === 'injury-list-container') {
+        if (sourcePlayer.status === 'starter') {
+            reIndexRow(sourcePrevRow);
+        }
+        allPlayers[sourceIndex].status = 'injured';
+        allPlayers[sourceIndex].row = 0;
+        allPlayers[sourceIndex].slotIndex = -1;
+    }
+    else if (targetElement === benchContainer || targetElement.closest('#bench-list-container')) {
+        if (sourcePlayer.status === 'starter') {
+            reIndexRow(sourcePrevRow);
+        }
+        allPlayers[sourceIndex].status = 'bench';
+        allPlayers[sourceIndex].row = 0;
+        allPlayers[sourceIndex].slotIndex = -1; 
+    }
+    else if (targetElement.classList.contains('player-row-slot')) {
+        const targetRow = parseInt(targetElement.dataset.row);
+        const targetSlot = parseInt(targetElement.dataset.slot);
+        
+        const targetPlayer = allPlayers.find(p => p.row === targetRow && p.slotIndex === targetSlot && p.status === 'starter');
+
+        if (targetPlayer) {
+            const targetIndex = allPlayers.indexOf(targetPlayer);
+
+            if (targetPlayer.status === 'starter' && sourcePlayer.status === 'starter') {
+                const tempRow = targetPlayer.row;
+                const tempSlot = targetPlayer.slotIndex;
+                allPlayers[targetIndex].row = sourcePlayer.row;
+                allPlayers[targetIndex].slotIndex = sourcePlayer.slotIndex;
+                allPlayers[sourceIndex].row = tempRow;
+                allPlayers[sourceIndex].slotIndex = tempSlot;
+
+                if (sourcePrevRow !== targetRow) {
+                    reIndexRow(sourcePrevRow);
+                    reIndexRow(targetRow);
+                }
+            } else if (targetPlayer.status === 'starter' && sourcePlayer.status !== 'starter') {
+                allPlayers[targetIndex].status = 'bench';
+                allPlayers[targetIndex].row = 0;
+                allPlayers[targetIndex].slotIndex = -1;
+
+                allPlayers[sourceIndex].status = 'starter';
+                allPlayers[sourceIndex].row = targetRow;
+                allPlayers[sourceIndex].slotIndex = targetSlot;
+                
+                if (sourcePrevRow > 0) reIndexRow(sourcePrevRow); 
+                reIndexRow(targetRow); 
+            }
+        } 
+        else {
+            if (sourcePlayer.status === 'starter') {
+                reIndexRow(sourcePrevRow); 
+            }
+             
+            allPlayers[sourceIndex].status = 'starter';
+            allPlayers[sourceIndex].row = targetRow;
+            allPlayers[sourceIndex].slotIndex = targetSlot;
+
+            reIndexRow(targetRow); 
+        }
+    }
+}
+
+function attachListenersToCard(cardContent) {
+    cardContent.addEventListener('dragstart', handleDragStart);
+    cardContent.addEventListener('dragend', handleDragEnd);
+    cardContent.addEventListener('touchstart', handleTouchStart, { passive: false });
+}
+
+function createPlayerCard(player, isPitchCard = true) {
+    const cardContent = document.createElement('div');
+    cardContent.className = isPitchCard ? 'player-card' : 'player-list-item-content'; 
+    cardContent.dataset.id = player.id;
+    cardContent.setAttribute('draggable', true);
+    cardContent.setAttribute('tabindex', '0');
+    
+    let displayPosition = player.position;
+    if (player.position === "MID DEF") {
+        displayPosition = "MID/DEF";
+    }
+
+    cardContent.setAttribute('aria-label', `${player.name} (${displayPosition})`);
+    
+    if (!isPitchCard && player.status === 'injured') {
+        cardContent.classList.add('injured');
+    }
+
+    const playerImg = player.img || getPlaceholderImage(player.position);
+
+    cardContent.innerHTML = `
+        <img src="${playerImg}" alt="תמונה של ${player.name}" onerror="this.src='${getPlaceholderImage(player.position)}';">
+        <span>${player.name} (${displayPosition})</span>
+        <button class="delete-btn" onclick="demotePlayerToBench(${player.id})">×</button>
+    `;
+    
+    cardContent.querySelector('.delete-btn').addEventListener('dragstart', (e) => e.stopPropagation());
+    cardContent.querySelector('.delete-btn').addEventListener('touchstart', (e) => e.stopPropagation());
+
+    attachListenersToCard(cardContent);
+    
+    return cardContent;
+}
+
+function renderLineup(animate = false) {
+    isAnimationRunning = animate;
+
+    for (let row = 1; row <= 6; row++) {
+        const rowDiv = pitchDivs[row];
+        if (rowDiv) rowDiv.innerHTML = '';
+        reIndexRow(row); 
+    }
+
+    injuryListContainer.innerHTML = '';
+    
+    const benchContainerContent = document.getElementById('bench-list-container');
+    if (!benchContainerContent) return;
+    benchContainerContent.innerHTML = '';
+
+    // Render Pitch
+    for (let row = 1; row <= 6; row++) {
+        const rowDiv = pitchDivs[row];
+        const currentMaxSlots = currentFormation[row];
+        
+        if (rowDiv && currentMaxSlots !== undefined) {
+            const actualStarters = allPlayers
+                .filter(p => p.status === 'starter' && p.row === row)
+                .sort((a, b) => a.slotIndex - b.slotIndex);
+            
+            for (let i = 0; i < currentMaxSlots; i++) {
+                const player = actualStarters.find(p => p.slotIndex === i);
+                
+                const slot = document.createElement('div');
+                slot.className = 'player-row-slot';
+                slot.dataset.row = row;
+                slot.dataset.slot = i;
+                
+                slot.addEventListener('dragover', handleDragOver);
+                slot.addEventListener('dragenter', handleDragEnter);
+                slot.addEventListener('dragleave', handleDragLeave);
+                slot.addEventListener('drop', handleDrop);
+
+                if (player) {
+                    const card = createPlayerCard(player, true);
+                    slot.appendChild(card);
+                } else {
+                    slot.classList.add('empty-slot');
+                }
+                rowDiv.appendChild(slot);
+            }
+        }
+    }
+    
+    // Render Bench & Injured
+    const nonStarters = allPlayers.filter(p => p.status !== 'starter');
+
+    const groupedBench = nonStarters.reduce((acc, player) => {
+        if (player.status === 'bench') {
+            const groupData = POSITION_GROUPS[player.position] || POSITION_GROUPS["Other"];
+            const groupKey = groupData.groupKey;
+            
+            if (!acc[groupKey]) {
+                acc[groupKey] = {
+                    name: groupData.name,
+                    order: groupData.order,
+                    players: []
+                };
+            }
+            acc[groupKey].players.push(player);
+        }
+        return acc;
+    }, {});
+
+    const sortedGroups = Object.values(groupedBench)
+        .sort((a, b) => a.order - b.order);
+
+    sortedGroups.forEach(group => {
+        group.players.sort((a, b) => a.name.localeCompare(b.name));
+    });
+
+    sortedGroups.forEach(group => {
+        const groupContainer = document.createElement('div');
+        groupContainer.className = 'bench-group-container';
+        
+        const header = document.createElement('h3');
+        header.textContent = group.name;
+        groupContainer.appendChild(header);
+
+        const ul = document.createElement('ul');
+        ul.className = 'player-list';
+        
+        group.players.forEach(player => {
+            const cardContent = createPlayerCard(player, false); 
+            const listItem = document.createElement('li'); 
+            listItem.appendChild(cardContent);
+            ul.appendChild(listItem);
+        });
+        
+        groupContainer.appendChild(ul);
+        benchContainerContent.appendChild(groupContainer);
+    });
+
+    // Render Injured
+    nonStarters.filter(p => p.status === 'injured').forEach(player => {
+        const cardContent = createPlayerCard(player, false); 
+        const listItem = document.createElement('li'); 
+        listItem.appendChild(cardContent);
+        injuryListContainer.appendChild(listItem);
+    });
+
+    if (animate) {
+        let delay = 0;
+        const pitchCards = document.querySelectorAll('.player-card');
+        pitchCards.forEach((card, index) => {
+            setTimeout(() => {
+                card.classList.add('animate-in');
+                if (index === pitchCards.length - 1) {
+                    setTimeout(() => {
+                        isAnimationRunning = false;
+                        document.querySelectorAll('.player-card.animate-in').forEach(c => c.classList.remove('animate-in'));
+                    }, 500); 
+                }
+            }, delay);
+            delay += 50; 
+        });
+        if (pitchCards.length === 0) {
+            isAnimationRunning = false;
+        }
+    }
+}
+
+function runPitchAnimation() {
+    if (isAnimationRunning) return; 
+    Object.values(pitchDivs).forEach(div => div.innerHTML = '');
+    renderLineup(true); 
+}
+
+// Touch handlers (קצר כדי לחסוך מקום)
+function handleTouchStart(e) {
+    const targetCard = e.target.closest('.player-card, .player-list-item-content');
+    if (!targetCard) return;
+    if (isAnimationRunning) { e.preventDefault(); return; }
+    e.preventDefault();
+    draggingElementId = targetCard.dataset.id;
+    currentTouchCard = targetCard;
+    currentTouchCard.style.opacity = '0.5';
+}
+
+function handleTouchEnd(e) {
+    if (currentTouchCard) currentTouchCard.style.opacity = '1';
+    draggingElementId = null;
+    currentTouchCard = null;
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+    fillEmptySlots(); 
+    changeFormation('4-3-3', true); 
+    
+    document.getElementById('formation-control-buttons').addEventListener('click', (e) => {
+        const button = e.target.closest('button[data-formation]');
+        if (button) {
+            changeFormation(button.dataset.formation, true); 
+        }
+    });
+
+    document.getElementById('re-run-animation').addEventListener('click', runPitchAnimation);
+    
+    document.getElementById('update-api-btn').addEventListener('click', fetchAndUpdateInjuries);
+    
+    // Auto-update every 12 hours
+    setInterval(fetchAndUpdateInjuries, UPDATE_INTERVAL);
+    
+    newPlayerForm.addEventListener('submit', addPlayerImmediately);
+    document.getElementById('cancel-add-player-btn').addEventListener('click', hideAddPlayerForm);
+    document.getElementById('add-injured-btn').addEventListener('click', () => showAddPlayerForm('injured'));
+    document.getElementById('add-bench-btn').addEventListener('click', () => showAddPlayerForm('bench'));
+    
+    // Close modal on overlay click
+    modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) hideAddPlayerForm();
+    });
+});
+</script>
+</body>
+</html>

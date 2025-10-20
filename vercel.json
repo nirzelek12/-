@@ -1,5 +1,3 @@
-זה קל לתקן. צריך ליצור vercel.json חדש שמגיד לVercel איפה ה-HTML.
-צור קובץ vercel.json חדש ברוט הריפו שלך:
 json{
   "public": ".",
   "builds": [

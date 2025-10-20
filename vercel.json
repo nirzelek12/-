@@ -1,0 +1,21 @@
+זה קל לתקן. צריך ליצור vercel.json חדש שמגיד לVercel איפה ה-HTML.
+צור קובץ vercel.json חדש ברוט הריפו שלך:
+json{
+  "public": ".",
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
